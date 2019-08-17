@@ -48,6 +48,8 @@ class plgInstallerFoo extends CMSPlugin
 	/**
 	 * onInstallerBeforePackageDownload.
 	 *
+	 * For modification of URL and headers before package download
+	 *
 	 * @return  void
 	 *
 	 * @since   1.0

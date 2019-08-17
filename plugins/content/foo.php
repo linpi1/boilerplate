@@ -198,4 +198,34 @@ class plgContentFoo extends CMSPlugin
 	{
 
 	}
+
+	/**
+	 * Runs on content preparation of data
+	 *
+	 * @param   string  $context  The context for the data
+	 * @param   object  $data     An object containing the data for the form.
+	 *
+	 * @return  boolean
+	 *
+	 * @since   1.0
+	 */
+	public function onContentPrepareData($context, &$data)
+	{
+
+	}
+
+	/**
+	 * Runs on content preparation of form.
+	 *
+	 * @param   JForm     $form  The form
+	 * @param   stdClass  $data  The data
+	 *
+	 * @return  boolean
+	 *
+	 * @since   1.0
+	 */
+	public function onContentPrepareForm(JForm $form, $data)
+	{
+
+	}
 }
