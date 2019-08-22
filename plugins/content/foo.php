@@ -13,6 +13,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Application\CMSApplication;
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Database\DatabaseDriver;
+use Joomla\CMS\Form\Form;
 
 /**
  * Foo plugin.
@@ -217,14 +218,30 @@ class plgContentFoo extends CMSPlugin
 	/**
 	 * Runs on content preparation of form.
 	 *
-	 * @param   JForm     $form  The form
+	 * @param   Form     $form  The form
 	 * @param   stdClass  $data  The data
 	 *
 	 * @return  boolean
 	 *
 	 * @since   1.0
 	 */
-	public function onContentPrepareForm(JForm $form, $data)
+	public function onContentPrepareForm(Form $form, $data)
+	{
+
+	}
+
+	/**
+	 * Normalizes the request data.
+	 *
+	 * @param   string  $context  The context
+	 * @param   object  $data     The object
+	 * @param   Form    $form     The form
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function onContentNormaliseRequestData($context, $data, Form $form)
 	{
 
 	}

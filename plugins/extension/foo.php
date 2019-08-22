@@ -47,6 +47,30 @@ class plgExtensionFoo extends CMSPlugin
 	protected $autoloadLanguage = true;
 
 	/**
+	 * Event Triggered in the compiler [on Before Get]
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function jcb_ce_onBeforeGet(&$config, $compiler)
+	{
+		// do something on the jcb_ce_onBeforeGet event
+	}
+
+	/**
+	 * Event Triggered in the compiler [on After Get]
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function jcb_ce_onAfterGet(&$context, $compiler)
+	{
+		// do something on the jcb_ce_onAfterGet event
+	}
+
+	/**
 	 * Event Triggered in the compiler [on Before Query Component Data]
 	 *
 	 * @return  void
