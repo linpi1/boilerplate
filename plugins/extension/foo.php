@@ -670,4 +670,29 @@ class plgExtensionFoo extends CMSPlugin
 	{
 
 	}
+
+	/**
+	 * Event Triggered in the compiler [on Before Build Access Sections]
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function jcb_ce_onBeforeBuildAccessSections(&$context, $compiler)
+	{
+		// do something on the jcb_ce_onBeforeBuildAccessSections event
+	}
+
+	/**
+	 * Event Triggered in the compiler [on After Build Access Sections]
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function jcb_ce_onAfterBuildAccessSections(&$context, $compiler)
+	{
+		// do something on the jcb_ce_onAfterBuildAccessSections event
+	}
+
 }
