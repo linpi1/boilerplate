@@ -695,4 +695,28 @@ class plgExtensionFoo extends CMSPlugin
 		// do something on the jcb_ce_onAfterBuildAccessSections event
 	}
 
+	/**
+	 * Event Triggered in the compiler [on Before Get Component Data]
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function jcb_ce_onBeforeGetComponentData(&$context, $compiler)
+	{
+		// do something on the jcb_ce_onBeforeGetComponentData event
+	}
+
+	/**
+	 * Event Triggered in the compiler [on After Get Component Data]
+	 *
+	 * @return  void
+	 *
+	 * @since   1.0
+	 */
+	public function jcb_ce_onAfterGetComponentData(&$context, $compiler)
+	{
+		// do something on the jcb_ce_onAfterGetComponentData event
+	}
+
 }
