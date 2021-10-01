@@ -66,7 +66,7 @@ class plgButtonFoo extends CMSPlugin
 		$button->modal = true;
 		$button->class = 'btn btn-secondary';
 		$button->link = $link;
-		$button->text = Text::_('PLG_EDITORSXTD_FOO_BUTTON_FOO');
+		$button->text = JText::_('PLG_EDITORSXTD_FOO_BUTTON_FOO');
 		$button->name = 'file-add';
 		$button->options = array(
 			'height'     => '300px',
